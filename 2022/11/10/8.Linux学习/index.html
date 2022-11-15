@@ -472,7 +472,216 @@
 <li><h5 id="chmod-ugoal-x3D-rwx-goal-file"><a href="#chmod-ugoal-x3D-rwx-goal-file" class="headerlink" title="$ chmod [ugoal][+-&#x3D;][rwx] [goal file]"></a>$ chmod [ugoal][+-&#x3D;][rwx] [goal file]</h5></li>
 </ul>
 </blockquote>
-<h5 id="格式二："><a href="#格式二：" class="headerlink" title="格式二："></a>格式二：</h5><h5 id="用数字表示权限r-x3D-4-w-x3D-2-x-x3D-1-如：r–rw-rwx-467"><a href="#用数字表示权限r-x3D-4-w-x3D-2-x-x3D-1-如：r–rw-rwx-467" class="headerlink" title="用数字表示权限r&#x3D;4 w&#x3D;2 x&#x3D;1 如：r–rw-rwx 467"></a>用数字表示权限r&#x3D;4 w&#x3D;2 x&#x3D;1 如：r–rw-rwx 467</h5>
+<h5 id="格式二："><a href="#格式二：" class="headerlink" title="格式二："></a>格式二：</h5><h5 id="用数字表示权限r-x3D-4-w-x3D-2-x-x3D-1-如：r–rw-rwx-467"><a href="#用数字表示权限r-x3D-4-w-x3D-2-x-x3D-1-如：r–rw-rwx-467" class="headerlink" title="用数字表示权限r&#x3D;4 w&#x3D;2 x&#x3D;1 如：r–rw-rwx 467"></a>用数字表示权限r&#x3D;4 w&#x3D;2 x&#x3D;1 如：r–rw-rwx 467</h5><h3 id="12-vim"><a href="#12-vim" class="headerlink" title="12.vim"></a>12.vim</h3><h4 id="四种模式"><a href="#四种模式" class="headerlink" title="四种模式"></a>四种模式</h4><blockquote>
+<ul>
+<li><h5 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="编辑模式"><a href="#编辑模式" class="headerlink" title="编辑模式"></a>编辑模式</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="末行模式"><a href="#末行模式" class="headerlink" title="末行模式"></a>末行模式</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="可视化模式"><a href="#可视化模式" class="headerlink" title="可视化模式"></a>可视化模式</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="四种模式关系如下："><a href="#四种模式关系如下：" class="headerlink" title="四种模式关系如下："></a>四种模式关系如下：</h5></li>
+</ul>
+</blockquote>
+<h5 id="-8"><a href="#-8" class="headerlink" title=""></a><img src="https://img-blog.csdnimg.cn/20210217160304749.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hzRm9yUHlw,size_16,color_FFFFFF,t_70#pic_center" alt="模式关系"></h5><h5 id="vim打开文件"><a href="#vim打开文件" class="headerlink" title="vim打开文件"></a>vim打开文件</h5><blockquote>
+<ul>
+<li><h5 id="vim-goal-如果goal存在，则直接打开，否则，创建goal"><a href="#vim-goal-如果goal存在，则直接打开，否则，创建goal" class="headerlink" title="$ vim goal   (如果goal存在，则直接打开，否则，创建goal)"></a>$ vim goal   (如果goal存在，则直接打开，否则，创建goal)</h5></li>
+</ul>
+</blockquote>
+<h5 id="vim退出"><a href="#vim退出" class="headerlink" title="vim退出"></a>vim退出</h5><blockquote>
+<ul>
+<li><h5 id="q-x2F-wq-前者不保存，后者保存"><a href="#q-x2F-wq-前者不保存，后者保存" class="headerlink" title="$ q&#x2F;wq  (前者不保存，后者保存)"></a>$ q&#x2F;wq  (前者不保存，后者保存)</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="加！可强制退出"><a href="#加！可强制退出" class="headerlink" title="$ 加！可强制退出"></a>$ 加<strong>！</strong>可强制退出</h5></li>
+</ul>
+</blockquote>
+<h3 id="1-命令模式下的相关操作"><a href="#1-命令模式下的相关操作" class="headerlink" title="1.命令模式下的相关操作(!)"></a>1.命令模式下的相关操作(!)</h3><blockquote>
+<ul>
+<li><h5 id="命令模式下我们能做什么"><a href="#命令模式下我们能做什么" class="headerlink" title="命令模式下我们能做什么"></a>命令模式下我们能做什么</h5></li>
+</ul>
+</blockquote>
+<h5 id="①-移动光标-②-复制-粘贴-③-剪切-粘贴-删除-④-撤销与恢复"><a href="#①-移动光标-②-复制-粘贴-③-剪切-粘贴-删除-④-撤销与恢复" class="headerlink" title="① 移动光标 ② 复制 粘贴 ③ 剪切 粘贴 删除 ④ 撤销与恢复"></a>① 移动光标 ② 复制 粘贴 ③ 剪切 粘贴 删除 ④ 撤销与恢复</h5><h5 id="☆-移动光标到首行或末行（-）"><a href="#☆-移动光标到首行或末行（-）" class="headerlink" title="☆ 移动光标到首行或末行（!）"></a>☆ 移动光标到首行或末行（!）</h5><h5 id="移动光标到首行-x3D-gt-gg"><a href="#移动光标到首行-x3D-gt-gg" class="headerlink" title="移动光标到首行 &#x3D;&gt; gg"></a>移动光标到首行 &#x3D;&gt; gg</h5><h5 id="移动光标到末行-x3D-gt-G"><a href="#移动光标到末行-x3D-gt-G" class="headerlink" title="移动光标到末行 &#x3D;&gt; G"></a>移动光标到末行 &#x3D;&gt; G</h5><h4 id="☆-翻屏"><a href="#☆-翻屏" class="headerlink" title="☆ 翻屏(!)"></a>☆ 翻屏(!)</h4><blockquote>
+<ul>
+<li><h5 id="向上-翻屏，按键：-ctrl-b-（before）-或-PgUp"><a href="#向上-翻屏，按键：-ctrl-b-（before）-或-PgUp" class="headerlink" title="向上 翻屏，按键：$ ctrl + b （before） 或 PgUp"></a>向上 翻屏，按键：$ ctrl + b （before） 或 PgUp</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="向下-翻屏，按键：-ctrl-f-（after）-或-PgDn"><a href="#向下-翻屏，按键：-ctrl-f-（after）-或-PgDn" class="headerlink" title="向下 翻屏，按键：$ ctrl + f （after） 或 PgDn"></a>向下 翻屏，按键：$ ctrl + f （after） 或 PgDn</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="向上翻半屏，按键：-ctrl-u-（up）"><a href="#向上翻半屏，按键：-ctrl-u-（up）" class="headerlink" title="向上翻半屏，按键：$ ctrl + u （up）"></a>向上翻半屏，按键：$ ctrl + u （up）</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="向下翻半屏，按键：-ctrl-d-（down）"><a href="#向下翻半屏，按键：-ctrl-d-（down）" class="headerlink" title="向下翻半屏，按键：$ ctrl + d （down）"></a>向下翻半屏，按键：$ ctrl + d （down）</h5></li>
+</ul>
+</blockquote>
+<h4 id="复制-x2F-粘贴（-）"><a href="#复制-x2F-粘贴（-）" class="headerlink" title="复制&#x2F;粘贴（!）"></a>复制&#x2F;粘贴（!）</h4><blockquote>
+<ul>
+<li><h5 id="①-复制当前行（光标所在那一行）"><a href="#①-复制当前行（光标所在那一行）" class="headerlink" title="① 复制当前行（光标所在那一行）"></a>① 复制当前行（光标所在那一行）</h5></li>
+</ul>
+</blockquote>
+<h5 id="按键：-yy"><a href="#按键：-yy" class="headerlink" title="按键：$ yy"></a>按键：$ yy</h5><blockquote>
+<ul>
+<li><h5 id="粘贴：在想要粘贴的地方按下p-键【将粘贴在光标所在行的下一行】-如果想粘贴在光标所在行之前，则使用P键"><a href="#粘贴：在想要粘贴的地方按下p-键【将粘贴在光标所在行的下一行】-如果想粘贴在光标所在行之前，则使用P键" class="headerlink" title="粘贴：在想要粘贴的地方按下p 键【将粘贴在光标所在行的下一行】,如果想粘贴在光标所在行之前，则使用P键"></a>粘贴：在想要粘贴的地方按下p 键【将粘贴在光标所在行的下一行】,如果想粘贴在光标所在行之前，则使用P键</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="②-从当前行开始复制指定的行数，如复制5行-5yy"><a href="#②-从当前行开始复制指定的行数，如复制5行-5yy" class="headerlink" title="② 从当前行开始复制指定的行数，如复制5行:$ 5yy"></a>② 从当前行开始复制指定的行数，如复制5行:$ 5yy</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="粘贴：在想要粘贴的地方按下p-键【将粘贴在光标所在行的下一行】-如果想粘贴在光标所在行之前，则使用P键-1"><a href="#粘贴：在想要粘贴的地方按下p-键【将粘贴在光标所在行的下一行】-如果想粘贴在光标所在行之前，则使用P键-1" class="headerlink" title="粘贴：在想要粘贴的地方按下p 键【将粘贴在光标所在行的下一行】,如果想粘贴在光标所在行之前，则使用P键"></a>粘贴：在想要粘贴的地方按下p 键【将粘贴在光标所在行的下一行】,如果想粘贴在光标所在行之前，则使用P键</h5></li>
+</ul>
+</blockquote>
+<h4 id="☆-剪切-x2F-删除（-）"><a href="#☆-剪切-x2F-删除（-）" class="headerlink" title="☆ 剪切&#x2F;删除（!）"></a>☆ 剪切&#x2F;删除（!）</h4><blockquote>
+<ul>
+<li><h5 id="在VIM编辑器中，剪切与删除都是-dd"><a href="#在VIM编辑器中，剪切与删除都是-dd" class="headerlink" title="在VIM编辑器中，剪切与删除都是: $ dd"></a>在VIM编辑器中，剪切与删除都是: $ dd</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="如果剪切了文件，但是没有使用p进行粘贴，就是删除操作-dd"><a href="#如果剪切了文件，但是没有使用p进行粘贴，就是删除操作-dd" class="headerlink" title="如果剪切了文件，但是没有使用p进行粘贴，就是删除操作 : $ dd"></a>如果剪切了文件，但是没有使用p进行粘贴，就是删除操作 : $ dd</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="如果剪切了文件，然后使用p进行粘贴，这就是剪切操作-dd-p"><a href="#如果剪切了文件，然后使用p进行粘贴，这就是剪切操作-dd-p" class="headerlink" title="如果剪切了文件，然后使用p进行粘贴，这就是剪切操作   : $ dd + p"></a>如果剪切了文件，然后使用p进行粘贴，这就是剪切操作   : $ dd + p</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="①-剪切-x2F-删除当前光标所在行"><a href="#①-剪切-x2F-删除当前光标所在行" class="headerlink" title="① 剪切&#x2F;删除当前光标所在行"></a>① 剪切&#x2F;删除当前光标所在行</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="按键：-dd-（删除之后下一行上移）"><a href="#按键：-dd-（删除之后下一行上移）" class="headerlink" title="按键：$ dd （删除之后下一行上移）"></a>按键：$ dd （删除之后下一行上移）</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="粘贴：-p"><a href="#粘贴：-p" class="headerlink" title="粘贴：$ p"></a>粘贴：$ p</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="注意：dd-严格意义上说是剪切命令，但是如果剪切了不粘贴就是删除的效果。"><a href="#注意：dd-严格意义上说是剪切命令，但是如果剪切了不粘贴就是删除的效果。" class="headerlink" title="注意：dd 严格意义上说是剪切命令，但是如果剪切了不粘贴就是删除的效果。"></a>注意：dd 严格意义上说是剪切命令，但是如果剪切了不粘贴就是删除的效果。</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="②-剪切-x2F-删除多行（从当前光标所在行开始计算）"><a href="#②-剪切-x2F-删除多行（从当前光标所在行开始计算）" class="headerlink" title="② 剪切&#x2F;删除多行（从当前光标所在行开始计算）"></a>② 剪切&#x2F;删除多行（从当前光标所在行开始计算）</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="按键：-number-dd"><a href="#按键：-number-dd" class="headerlink" title="按键：$ number + dd"></a>按键：$ number + dd</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="粘贴：-p-1"><a href="#粘贴：-p-1" class="headerlink" title="粘贴：$ p"></a>粘贴：$ p</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="特殊用法："><a href="#特殊用法：" class="headerlink" title="特殊用法："></a>特殊用法：</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="③-剪切-x2F-删除光标所在的当前行（光标所在位置）之后的内容，但是删除之后下一行不上移"><a href="#③-剪切-x2F-删除光标所在的当前行（光标所在位置）之后的内容，但是删除之后下一行不上移" class="headerlink" title="③ 剪切&#x2F;删除光标所在的当前行（光标所在位置）之后的内容，但是删除之后下一行不上移"></a>③ 剪切&#x2F;删除光标所在的当前行（光标所在位置）之后的内容，但是删除之后下一行不上移</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="按键：-D-（删除之后当前行会变成空白行）"><a href="#按键：-D-（删除之后当前行会变成空白行）" class="headerlink" title="按键：$ D （删除之后当前行会变成空白行）"></a>按键：$ D （删除之后当前行会变成空白行）</h5></li>
+</ul>
+</blockquote>
+<h4 id="☆-撤销-x2F-恢复（-）"><a href="#☆-撤销-x2F-恢复（-）" class="headerlink" title="☆ 撤销&#x2F;恢复（!）"></a>☆ 撤销&#x2F;恢复（!）</h4><blockquote>
+<ul>
+<li><h5 id="撤销：-u（undo）"><a href="#撤销：-u（undo）" class="headerlink" title="撤销：$ u（undo）"></a>撤销：$ u（undo）</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="恢复：-ctrl-r-恢复（取消）之前的撤销操作【重做，redo】"><a href="#恢复：-ctrl-r-恢复（取消）之前的撤销操作【重做，redo】" class="headerlink" title="恢复：$ ctrl + r 恢复（取消）之前的撤销操作【重做，redo】"></a>恢复：$ ctrl + r 恢复（取消）之前的撤销操作【重做，redo】</h5></li>
+</ul>
+</blockquote>
+<h3 id="2-末行模式下的相关操作"><a href="#2-末行模式下的相关操作" class="headerlink" title="2.末行模式下的相关操作"></a>2.末行模式下的相关操作</h3><h4 id="1-如何进入末行模式：-双击Esc，然后输入’：’号即可"><a href="#1-如何进入末行模式：-双击Esc，然后输入’：’号即可" class="headerlink" title="1.如何进入末行模式： 双击Esc，然后输入’：’号即可"></a>1.如何进入末行模式： 双击Esc，然后输入’：’号即可</h4><h4 id="2-如果在一个文件中，存在多个满足条件的结果。在搜索结果中切换上-x2F-下一个结果：-N-x2F-n-（大写N代表上一个结果，小写n代表next）"><a href="#2-如果在一个文件中，存在多个满足条件的结果。在搜索结果中切换上-x2F-下一个结果：-N-x2F-n-（大写N代表上一个结果，小写n代表next）" class="headerlink" title="2.如果在一个文件中，存在多个满足条件的结果。在搜索结果中切换上&#x2F;下一个结果：$ N&#x2F;n （大写N代表上一个结果，小写n代表next）"></a>2.如果在一个文件中，存在多个满足条件的结果。在搜索结果中切换上&#x2F;下一个结果：$ N&#x2F;n （大写N代表上一个结果，小写n代表next）</h4><h5 id="3-如果需要取消高亮，则需要在末行模式中输入-noh【no-highlight】"><a href="#3-如果需要取消高亮，则需要在末行模式中输入-noh【no-highlight】" class="headerlink" title="3.如果需要取消高亮，则需要在末行模式中输入:$ noh【no highlight】"></a>3.如果需要取消高亮，则需要在末行模式中输入:$ noh【no highlight】</h5><h3 id="4-文件内容的替换（-）"><a href="#4-文件内容的替换（-）" class="headerlink" title="4.文件内容的替换（!）"></a>4.文件内容的替换（!）</h3><h4 id="第一步：首先要进入末行模式（在命令模式下输入冒号-）"><a href="#第一步：首先要进入末行模式（在命令模式下输入冒号-）" class="headerlink" title="第一步：首先要进入末行模式（在命令模式下输入冒号:）"></a>第一步：首先要进入末行模式（在命令模式下输入冒号:）</h4><h4 id="第二步：根据需求替换内容"><a href="#第二步：根据需求替换内容" class="headerlink" title="第二步：根据需求替换内容"></a>第二步：根据需求替换内容</h4><blockquote>
+<ul>
+<li><h5 id="①-只替换光标所在这一行的第一个满足条件的结果（只能替换1次）"><a href="#①-只替换光标所在这一行的第一个满足条件的结果（只能替换1次）" class="headerlink" title="① 只替换光标所在这一行的第一个满足条件的结果（只能替换1次）"></a>① 只替换光标所在这一行的第一个满足条件的结果（只能替换1次）</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="s-x2F-要替换的关键词-x2F-替换后的关键词-回车"><a href="#s-x2F-要替换的关键词-x2F-替换后的关键词-回车" class="headerlink" title=": $ s&#x2F;要替换的关键词&#x2F;替换后的关键词   +  回车"></a>: $ s&#x2F;要替换的关键词&#x2F;替换后的关键词   +  回车</h5></li>
+<li><h5 id="example1：把hello-rhel中的-rhel替换为-rhel8"><a href="#example1：把hello-rhel中的-rhel替换为-rhel8" class="headerlink" title="example1：把hello rhel中的 rhel替换为 rhel8"></a>example1：把hello rhel中的 rhel替换为 rhel8</h5></li>
+</ul>
+</blockquote>
+<h5 id="切换光标到hello-rhel这一行-然后-s-x2F-rhel-x2F-rhel8"><a href="#切换光标到hello-rhel这一行-然后-s-x2F-rhel-x2F-rhel8" class="headerlink" title="切换光标到hello  rhel这一行,然后 $ s&#x2F;rhel&#x2F;rhel8"></a>切换光标到hello  rhel这一行,然后 $ s&#x2F;rhel&#x2F;rhel8</h5><blockquote>
+<ul>
+<li><h5 id="②-替换光标所在这一行中的所有满足条件的结果（替换多次，只能替换一行）"><a href="#②-替换光标所在这一行中的所有满足条件的结果（替换多次，只能替换一行）" class="headerlink" title="② 替换光标所在这一行中的所有满足条件的结果（替换多次，只能替换一行）"></a>② 替换光标所在这一行中的所有满足条件的结果（替换多次，只能替换一行）</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>#####:$ s&#x2F;要替换的关键词&#x2F;替换后的关键词&#x2F;g		(g&#x3D;global全局替换)</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="example2：把hello-rhel中的所有rhel都替换为rhel8"><a href="#example2：把hello-rhel中的所有rhel都替换为rhel8" class="headerlink" title="example2：把hello rhel中的所有rhel都替换为rhel8"></a>example2：把hello rhel中的所有rhel都替换为rhel8</h5></li>
+</ul>
+</blockquote>
+<h5 id="切换光标到hello-rhel这一行-然后-s-x2F-rhel-x2F-rhel8-x2F-g"><a href="#切换光标到hello-rhel这一行-然后-s-x2F-rhel-x2F-rhel8-x2F-g" class="headerlink" title="切换光标到hello rhel这一行,然后:$ s&#x2F;rhel&#x2F;rhel8&#x2F;g"></a>切换光标到hello rhel这一行,然后:$ s&#x2F;rhel&#x2F;rhel8&#x2F;g</h5><h5 id="③-针对整个文档中的所有行进行替换，只替换每一行中满足条件的第一个结果"><a href="#③-针对整个文档中的所有行进行替换，只替换每一行中满足条件的第一个结果" class="headerlink" title="③ 针对整个文档中的所有行进行替换，只替换每一行中满足条件的第一个结果"></a>③ 针对整个文档中的所有行进行替换，只替换每一行中满足条件的第一个结果</h5><blockquote>
+<ul>
+<li><h5 id="s-x2F-要替换的关键词-x2F-替换后的关键词"><a href="#s-x2F-要替换的关键词-x2F-替换后的关键词" class="headerlink" title=":%s&#x2F;要替换的关键词&#x2F;替换后的关键词"></a>:%s&#x2F;要替换的关键词&#x2F;替换后的关键词</h5></li>
+<li><h5 id="example3：把每一行中的第一个hello关键词都替换为hi"><a href="#example3：把每一行中的第一个hello关键词都替换为hi" class="headerlink" title="example3：把每一行中的第一个hello关键词都替换为hi"></a>example3：把每一行中的第一个hello关键词都替换为hi</h5></li>
+</ul>
+</blockquote>
+<h5 id="s-x2F-hello-x2F-hi"><a href="#s-x2F-hello-x2F-hi" class="headerlink" title=":$ %s&#x2F;hello&#x2F;hi"></a>:$ %s&#x2F;hello&#x2F;hi</h5><blockquote>
+<ul>
+<li><h5 id="④-针对整个文档中的所有关键词进行替换（只要满足条件就进行替换操作）"><a href="#④-针对整个文档中的所有关键词进行替换（只要满足条件就进行替换操作）" class="headerlink" title="④ 针对整个文档中的所有关键词进行替换（只要满足条件就进行替换操作）"></a>④ 针对整个文档中的所有关键词进行替换（只要满足条件就进行替换操作）</h5></li>
+<li><h5 id="s-x2F-要替换的关键词-x2F-替换后的关键词-x2F-g"><a href="#s-x2F-要替换的关键词-x2F-替换后的关键词-x2F-g" class="headerlink" title=":%s&#x2F;要替换的关键词&#x2F;替换后的关键词&#x2F;g"></a>:%s&#x2F;要替换的关键词&#x2F;替换后的关键词&#x2F;g</h5></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><h5 id="example4：替换整个文档中的hello关键词为hi"><a href="#example4：替换整个文档中的hello关键词为hi" class="headerlink" title="example4：替换整个文档中的hello关键词为hi"></a>example4：替换整个文档中的hello关键词为hi</h5></li>
+</ul>
+</blockquote>
+<h5 id="s-x2F-hello-x2F-hi-x2F-g"><a href="#s-x2F-hello-x2F-hi-x2F-g" class="headerlink" title=":%s&#x2F;hello&#x2F;hi&#x2F;g"></a>:%s&#x2F;hello&#x2F;hi&#x2F;g</h5><h4 id="5-☆-显示行号"><a href="#5-☆-显示行号" class="headerlink" title="5.☆ 显示行号"></a>5.☆ 显示行号</h4><blockquote>
+<ul>
+<li><h5 id="set-nu-【nu-x3D-number】，行号"><a href="#set-nu-【nu-x3D-number】，行号" class="headerlink" title=":$ set nu  【nu &#x3D; number】，行号"></a>:$ set nu  【nu &#x3D; number】，行号</h5></li>
+<li><h5 id="取消行号-x3D-gt-set-nonu"><a href="#取消行号-x3D-gt-set-nonu" class="headerlink" title="取消行号 &#x3D;&gt; :$ set nonu"></a>取消行号 &#x3D;&gt; :$ set nonu</h5></li>
+</ul>
+</blockquote>
+
       </section>
 
       
