@@ -821,6 +821,18 @@
 <li><h5 id="【-】把前一个命令的执行结果当做后一个命令的输入"><a href="#【-】把前一个命令的执行结果当做后一个命令的输入" class="headerlink" title="【|】把前一个命令的执行结果当做后一个命令的输入"></a>【|】把前一个命令的执行结果当做后一个命令的输入</h5></li>
 </ul>
 </blockquote>
+<h3 id="4-输出重定向例子"><a href="#4-输出重定向例子" class="headerlink" title="4.输出重定向例子"></a>4.输出重定向例子</h3><h5 id="4-1-把-x2F-etc-x2F-fstab文件内容重定向到-x2F-tmp目录下的gdy-out文件中"><a href="#4-1-把-x2F-etc-x2F-fstab文件内容重定向到-x2F-tmp目录下的gdy-out文件中" class="headerlink" title="4.1 把&#x2F;etc&#x2F;fstab文件内容重定向到&#x2F;tmp目录下的gdy.out文件中"></a>4.1 把&#x2F;etc&#x2F;fstab文件内容重定向到&#x2F;tmp目录下的gdy.out文件中</h5><p>【cat &#x2F;etc&#x2F;fstab &gt;&#x2F;tmp&#x2F;gdy.out】</p>
+<h5 id="4-2-把-hello-word-追加到gdy-out文件中"><a href="#4-2-把-hello-word-追加到gdy-out文件中" class="headerlink" title="4.2 把 hello word 追加到gdy.out文件中"></a>4.2 把 hello word 追加到gdy.out文件中</h5><p>【echo “hello word” &gt;&gt;&#x2F;tmp&#x2F;gdy.out】</p>
+<h5 id="4-3-设置进制覆盖重定向"><a href="#4-3-设置进制覆盖重定向" class="headerlink" title="4.3 设置进制覆盖重定向"></a>4.3 设置进制覆盖重定向</h5><p>【set -C】 执行后再使用覆盖重定向，会提示cannot overwrite existing file无法覆盖<br>解除禁止覆盖重定向<br>【set +C】</p>
+<h5 id="4-4-设置标准输出重定向和错误重定向"><a href="#4-4-设置标准输出重定向和错误重定向" class="headerlink" title="4.4 设置标准输出重定向和错误重定向"></a>4.4 设置标准输出重定向和错误重定向</h5><p>【ls abc.text gdy.text &gt;logOk 2&gt;logError】</p>
+<h5 id="4-5-合并标准输出和错误输出重定向到指定文件中"><a href="#4-5-合并标准输出和错误输出重定向到指定文件中" class="headerlink" title="4.5 合并标准输出和错误输出重定向到指定文件中"></a>4.5 合并标准输出和错误输出重定向到指定文件中</h5><p>【ls abc.txt gdy.text &amp;&gt;all.log】</p>
+<h5 id="4-6-追加标准输出和错误输出到同一文件中"><a href="#4-6-追加标准输出和错误输出到同一文件中" class="headerlink" title="4.6 追加标准输出和错误输出到同一文件中"></a>4.6 追加标准输出和错误输出到同一文件中</h5><p>【ls abc.txt gdy.text &amp;&gt;&gt;all.log】</p>
+<h5 id="4-7-【2-gt-amp-1的使用】"><a href="#4-7-【2-gt-amp-1的使用】" class="headerlink" title="4.7 【2&gt;&amp;1的使用】"></a>4.7 【2&gt;&amp;1的使用】</h5><p>【 ls abc.txt gdy.text &gt;all.log 2&gt;&amp;1】命令相当于【 ls abc.txt gdy.text &amp;&gt;all.log】</p>
+<h3 id="5-输入重定向例子"><a href="#5-输入重定向例子" class="headerlink" title="5.输入重定向例子"></a>5.输入重定向例子</h3><h5 id="5-1-输入重定向方式，把小写字母转换成大写字母"><a href="#5-1-输入重定向方式，把小写字母转换成大写字母" class="headerlink" title="5.1 输入重定向方式，把小写字母转换成大写字母"></a>5.1 输入重定向方式，把小写字母转换成大写字母</h5><p>【 tr a-z A-Z &lt;.&#x2F;gdy.txt】</p>
+<h5 id="5-2-把gdy-txt文件中的内容写入到gdy2-txt文件中"><a href="#5-2-把gdy-txt文件中的内容写入到gdy2-txt文件中" class="headerlink" title="5.2 把gdy.txt文件中的内容写入到gdy2.txt文件中"></a>5.2 把gdy.txt文件中的内容写入到gdy2.txt文件中</h5><p>【cat &lt;gdy.txt &gt;gdy2.txt】<br>将gdy.txt文件中的内容作为标准输入传递给cat命令，重定向【cat &lt;gdy.txt 】语句的标准输出为 gdy2.txt</p>
+<h5 id="5-3-多行输入"><a href="#5-3-多行输入" class="headerlink" title="5.3 多行输入"></a>5.3 多行输入</h5><p>【cat &gt; gdy.txt &lt;&lt;END】开始屏幕输入，直到输入END后结束<br>等同于【cat &lt;<END >gdy.txt】</p>
+<h3 id="6-管道例子"><a href="#6-管道例子" class="headerlink" title="6.管道例子"></a>6.管道例子</h3><h5 id="6-1-将input-txt-文件内容转换成大写输出"><a href="#6-1-将input-txt-文件内容转换成大写输出" class="headerlink" title="6.1 将input.txt 文件内容转换成大写输出"></a>6.1 将input.txt 文件内容转换成大写输出</h5><p>【echo “THIS is Test” | tr a-z A-Z】将echo输出的内容传递给tr命令，作为tr命令的输入，将输入的内容小写转换为大写</p>
+<h5 id="6-2-一页一页查看输入"><a href="#6-2-一页一页查看输入" class="headerlink" title="6.2 一页一页查看输入"></a>6.2 一页一页查看输入</h5><p>【ls -l &#x2F;etc | less】</p>
 
       </section>
 
